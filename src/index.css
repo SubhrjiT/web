@@ -6,7 +6,7 @@
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 
   --color-brand-primary: #ec4899;
-  --color-brand-secondary: #06b6d4;
+  --color-brand-secondary: rgba(236, 72, 153, 0.1);
 
   --color-primary: var(--text-primary);
   --color-secondary: var(--text-secondary);
@@ -60,7 +60,14 @@
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-cyan-600 dark:from-pink-500 dark:to-cyan-500;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 dark:from-pink-400 dark:via-purple-400 dark:to-cyan-400 font-black;
+  background-size: 200% auto;
+  animation: gradient-move 3s linear infinite;
+}
+
+@keyframes gradient-move {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
 }
 
 .project-card-glow {

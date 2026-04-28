@@ -1,8 +1,12 @@
 import { motion } from 'motion/react';
-import { Mail, Linkedin, Github, Send, ExternalLink } from 'lucide-react';
+import { Mail, Linkedin, Github, ExternalLink } from 'lucide-react';
+import useSound from 'use-sound';
 import { PERSONAL_INFO } from '../constants';
 
 export default function Contact() {
+  const [playHover] = useSound('https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3', { volume: 0.1 });
+  const [playClick] = useSound('https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3', { volume: 0.2 });
+
   return (
     <div className="max-w-7xl mx-auto px-8 py-20">
       <header className="mb-20 text-center">
@@ -34,7 +38,12 @@ export default function Contact() {
           >
             <h3 className="text-xl font-bold mb-2 text-primary">Direct Contact</h3>
             <div className="flex flex-col gap-6">
-              <a href={`mailto:${PERSONAL_INFO.email}`} className="flex items-center gap-6 group text-primary hover:text-primary transition-colors">
+              <a 
+                href={`mailto:${PERSONAL_INFO.email}`} 
+                onMouseEnter={() => playHover()}
+                onClick={() => playClick()}
+                className="flex items-center gap-6 group text-primary hover:text-primary transition-colors"
+              >
                 <div className="w-12 h-12 rounded-2xl bg-pink-50 dark:bg-pink-500/10 flex items-center justify-center text-pink-600 dark:text-pink-500 group-hover:scale-110 transition-transform">
                   <Mail className="w-5 h-5" />
                 </div>
@@ -54,14 +63,28 @@ export default function Contact() {
           >
             <h3 className="text-xl font-bold mb-6 text-primary">Socials</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <a href={PERSONAL_INFO.linkedin} target="_blank" rel="noreferrer" className="flex items-center justify-between p-4 rounded-2xl bg-white dark:bg-zinc-900 border border-border-primary dark:border-white/5 hover:border-pink-500/30 transition-colors group text-primary hover:text-primary">
+              <a 
+                href={PERSONAL_INFO.linkedin} 
+                target="_blank" 
+                rel="noreferrer" 
+                onMouseEnter={() => playHover()}
+                onClick={() => playClick()}
+                className="flex items-center justify-between p-4 rounded-2xl bg-white dark:bg-zinc-900 border border-border-primary dark:border-white/5 hover:border-pink-500/30 transition-colors group text-primary hover:text-primary"
+              >
                 <div className="flex items-center gap-3">
                   <Linkedin className="w-4 h-4 text-pink-600 dark:text-pink-500" />
                   <span className="text-xs font-bold uppercase tracking-widest">LinkedIn</span>
                 </div>
                 <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-zinc-400" />
               </a>
-              <a href={PERSONAL_INFO.github} target="_blank" rel="noreferrer" className="flex items-center justify-between p-4 rounded-2xl bg-white dark:bg-zinc-900 border border-border-primary dark:border-white/5 hover:border-cyan-500/30 transition-colors group text-primary hover:text-primary">
+              <a 
+                href={PERSONAL_INFO.github} 
+                target="_blank" 
+                rel="noreferrer" 
+                onMouseEnter={() => playHover()}
+                onClick={() => playClick()}
+                className="flex items-center justify-between p-4 rounded-2xl bg-white dark:bg-zinc-900 border border-border-primary dark:border-white/5 hover:border-cyan-500/30 transition-colors group text-primary hover:text-primary"
+              >
                 <div className="flex items-center gap-3">
                   <Github className="w-4 h-4 text-cyan-600 dark:text-cyan-500" />
                   <span className="text-xs font-bold uppercase tracking-widest">GitHub</span>

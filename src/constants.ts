@@ -82,6 +82,45 @@ export const EDUCATION = [
   },
 ];
 
+export const CERTIFICATIONS = [
+  {
+    title: 'Databricks Lakehouse Fundamentals',
+    issuer: 'Databricks',
+    year: 'Apr 2026',
+    link: 'https://credentials.databricks.com/0696da83-6108-4dc3-8b53-e9740f896690',
+  },
+  {
+    title: 'SQL (Advanced)',
+    issuer: 'HackerRank',
+    year: 'Jun 2025',
+    link: 'https://www.hackerrank.com/certificates/1eb536bde18a',
+  },
+  {
+    title: 'Python',
+    issuer: 'HackerRank',
+    year: 'Jun 2025',
+    link: 'https://www.hackerrank.com/certificates/2146e9494952',
+  },
+  {
+    title: 'Programming Essentials in Python',
+    issuer: 'OpenEDG Python Institute',
+    year: 'Feb 2022',
+    link: 'https://www.linkedin.com/in/subhrajit-behera/details/certifications/',
+  },
+  {
+    title: 'Machine Learning With Python',
+    issuer: 'Verzeo',
+    year: 'Nov 2021',
+    link: 'https://www.linkedin.com/in/subhrajit-behera/details/certifications/',
+  },
+  {
+    title: 'AWS Academy Graduate - AWS Academy Cloud Foundations',
+    issuer: 'Amazon Web Services (AWS)',
+    year: 'Apr 2021',
+    link: 'https://www.credly.com/badges/3f4907b3-e90e-410f-8421-4a772ca8bd96',
+  },
+];
+
 export interface Project {
   id: string;
   title: string;
