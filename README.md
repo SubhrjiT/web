@@ -8,6 +8,10 @@ A modern and responsive personal portfolio website built to showcase projects, s
 
 ---
 
+## 📸 Preview
+<img width="1329" height="585" alt="image" src="https://github.com/user-attachments/assets/5e53bfae-8685-46df-b7ab-0444db37a8d6" />
+---
+
 ## ✨ Features
 
 * Responsive design (mobile + desktop)
