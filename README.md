@@ -1,20 +1,89 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🚀 Portfolio Website
 
-# Run and deploy your AI Studio app
+A modern and responsive personal portfolio website built to showcase projects, skills, and experience.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/46af7aef-3f3d-49d6-be23-1e3a1dd687e9
+## 🌐 Live Demo
 
-## Run Locally
+https://subhrajit-behera-portfolio.vercel.app/
 
-**Prerequisites:**  Node.js
+---
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## ✨ Features
+
+* Responsive design (mobile + desktop)
+* Clean and modern UI
+* Project showcase section
+* Smooth navigation
+* Fast performance
+
+---
+
+## 📂 Project Structure
+
+```
+web/
+│── public/
+│── src/
+│   ├── components/
+│   ├── pages/
+│   └── assets/
+│── package.json
+│── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/SubhrjiT/web.git
+```
+
+### 2. Navigate to project folder
+
+```bash
+cd web
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Run the project
+
+```bash
+npm run dev
+```
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 🚀 Deployment
+
+This project is deployed on **Vercel**.
+
+---
+
+## 📸 Preview
+
+(Add screenshots here)
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
