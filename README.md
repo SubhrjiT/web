@@ -4,12 +4,9 @@ A modern and responsive personal portfolio website built to showcase projects, s
 
 ---
 
-## 🌐 Live Demo
-
-https://subhrajit-behera-portfolio.vercel.app/
+## 🌐 Live Demo : https://subhrajit-behera-portfolio.vercel.app/
 
 ---
-
 
 ## ✨ Features
 
