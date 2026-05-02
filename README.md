@@ -78,12 +78,6 @@ This project is deployed on **Vercel**.
 
 ---
 
-## 📸 Preview
-
-(Add screenshots here)
-
----
-
 ## 📄 License
 
 This project is open-source and available under the MIT License.
